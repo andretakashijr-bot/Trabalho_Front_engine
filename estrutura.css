@@ -1,0 +1,145 @@
+/* =========================================================
+1. RESET E ESTRUTURA BASE (FLEXBOX CONTAINER)
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #334155;
+}
+
+/* Container pai ocupando 100% da tela com alinhamento flexível */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Wrapper da área de conteúdo principal que cresce até ocupar o resto da tela */
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================================
+2. MENU LATERAL (SIDEBAR) E INTERATIVIDADE :HOVER
+========================================================= */
+.sidebar {
+    width: 240px;
+    background-image: url(https://i.pinimg.com/564x/f6/ba/69/f6ba6991bc2e22fda857eea72d1665e6.jpg);
+    color: #ffffff;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    position: relative;
+    background-color: olive;
+    display: block;
+    padding: 12px 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.logo h2 {
+    position: relative;
+    color: orangered;
+    font-size: 20px;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu a {
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Hover e Item Ativo */
+.menu a:hover,
+.menu a.active {
+    background-color: #0284c7;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+/* =========================================================
+3. TOPO COM GRADIENTE E CARDS COM SOMBRA E BORDAS
+========================================================= */
+/* Header com Gradiente Linear vibrante e alinhamento flexível */
+.topbar {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.topbar h1 {
+    font-size: 22px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+/* Área de Conteúdo Flexível */
+.content {
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos Cards com Profundidade 3D */
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    min-width: 280px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Microinteração nos Cards */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #0f172a;
+    margin-bottom: 8px;
+}
