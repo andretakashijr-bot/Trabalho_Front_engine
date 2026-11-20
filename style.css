@@ -1,7 +1,39 @@
+
 body {
-    background: #111;
-    color: white;
+    background: #F3E3C3;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    color: #333;
+    background: linear-gradient(to right, #D97706, #F4A261, #8D5524);
+}
+
+.cards {
+    display: flex;
+    gap: 100px;
+    width: max-content;
+    animation: rolar 15s linear infinite;
+}
+
+.topbar {
+    background: linear-gradient(to right, #D97706, #F4A261, #8D5524);
+    color: #ffffff;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.topbar h1 {
+    font-size: 22px;
 }
 
 .cards {
@@ -12,15 +44,39 @@ body {
 }
 
 .cards li {
-    background: purple;
+    background: #8D5524;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
     width: 200px;
-    height: 200px;
+    height: 250px;
+    border-radius: 10px;
     list-style: none;
+    opacity: 0.5;
 }
 
 img {
     width: 200px;
     height: 200px;
+}
+
+li {
+    background: #c2a07b;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+li img {
+    width: 100%;
+    display: block;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+
+li p {
+    color: white;
+    text-align: center;
 }
 
 @keyframes rolar {
