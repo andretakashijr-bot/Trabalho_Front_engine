@@ -1,11 +1,5 @@
-/* =========================================================
-1. RESET E ESTRUTURA BASE (FLEXBOX CONTAINER)
-========================================================= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -30,8 +24,8 @@ body {
 2. MENU LATERAL (SIDEBAR) E INTERATIVIDADE :HOVER
 ========================================================= */
 .sidebar {
-    width: 240px;
-    background-image: url(https://i.pinimg.com/564x/f6/ba/69/f6ba6991bc2e22fda857eea72d1665e6.jpg);
+    width: 14%;
+    background-color: rgb(255, 136, 0);
     color: #ffffff;
     padding: 24px 16px;
     display: flex;
@@ -39,22 +33,18 @@ body {
 }
 
 .logo {
-    position: relative;
-    background-color: olive;
-    display: block;
-    padding: 12px 2px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
+    background-color: green;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .logo h2 {
-    position: relative;
-    color: orangered;
+    color: white;
     font-size: 20px;
-    margin-bottom: 32px;
     letter-spacing: 1px;
-    text-align: center;
 }
 
 .menu {
@@ -64,7 +54,7 @@ body {
 }
 
 .menu a {
-    color: #94a3b8;
+    color: yellow;
     text-decoration: none;
     padding: 12px 16px;
     border-radius: 8px;
@@ -76,7 +66,7 @@ body {
 /* Efeito Hover e Item Ativo */
 .menu a:hover,
 .menu a.active {
-    background-color: #0284c7;
+    background-color: rgb(255, 255, 0);
     color: #ffffff;
     padding-left: 20px;
 }
