@@ -1,1 +1,9 @@
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
 
+#submit {
+    margin-top: 1.4%;
+    width: 10%;
+}
